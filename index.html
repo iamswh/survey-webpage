@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="index.css" />
+		<script
+			src="https://kit.fontawesome.com/1ee0a2203c.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Survey webpage</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<h1 id="title">SURVEY WEBPAGE</h1>
+				<p id="description">
+					Thank you for taking your valuable time. Please share your valuable
+					opinion to improve the platform.
+				</p>
+			</header>
+			<form action="" id="survey-form">
+				<!-- Text section -->
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input
+						type="text"
+						name="name"
+						id="name"
+						class="formControl"
+						placeholder="Enter your name"
+						required
+					/>
+				</div>
+				<!-- end of text section -->
+
+				<!-- Age Section -->
+				<div class="form-group">
+					<label for="age">Age</label>
+					<input
+						type="number"
+						name="age"
+						id="age"
+						class="formControl"
+						placeholder="Enter your age"
+						required
+					/>
+				</div>
+
+				<!-- Type Email section -->
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						class="formControl"
+						placeholder="Enter your Email"
+						required
+					/>
+				</div>
+				<!-- end of Email section -->
+
+				<!-- select section -->
+				<div class="form-group">
+					<label for="quest0"
+						>Which option best describe your current role</label
+					>
+					<select name="role" required id="dropdown" class="formControl">
+						<option value disabled selected>Select current role</option>
+						<option value="student">Student</option>
+						<option value="teacher">Teacher</option>
+						<option value="job">Job</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+				<!-- end of select section -->
+
+				<!-- Textarea section -->
+				<div class="form-group">
+					<label for="quest">What you like in particular webpage</label>
+					<textarea
+						name="what-you-like"
+						cols="30"
+						rows="5"
+						id="what-you-like"
+						class="textarea"
+						placeholder="Please write what you like in the webpage..."
+					></textarea>
+				</div>
+
+				<div class="form-group">
+					<label for="quest2"
+						>What features can we add to make webpage better</label
+					>
+					<textarea
+						name="what-features"
+						cols="30"
+						rows="5"
+						id="what-features"
+						class="textarea"
+						placeholder="Please write what features can we add to make webpage better..."
+					></textarea>
+				</div>
+
+				<div class="form-group">
+					<button type="submit" id="submit" class="btn">Submit</button>
+				</div>
+			</form>
+		</div>
+
+		<section class="footer">
+			<div class="social">
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-snapchat"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-facebook"></i></a>
+			</div>
+
+			<ul class="list">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+			</ul>
+
+			<p class="copyright">Made with ❤ by Syed Wajid Hossain 2022</p>
+		</section>
+	</body>
+</html>
